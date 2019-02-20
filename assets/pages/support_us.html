@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<!--
+Scripted By,
+    RinUO / {UnboundOrigins}
+        |©|UO Studios|©| -- Copyright
+-->
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>UO Studios</title>
+</head>
+
+
+<body>
+    <style>
+        body {
+            background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)),
+            url("../images/Background_One.png");
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-attachment: fixed;
+            background-size: cover;
+            position: fixed;
+            margin: 0px;
+            padding: 0px;
+        }
+        .current_page {
+            background-color: darkblue;
+            color: aliceblue;
+            border-radius: 25px;
+            box-shadow: 5px 5px 5px brown;
+            border-color: black;
+            font-size: 10px;
+            margin: 0px 0px 0px 100px;
+            max-width: 250px;
+            max-height: 25px;
+            text-decoration: none;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .nav_ul {
+            margin: 0px 0px 0px 90px;
+            display: flex;
+            flex-direction: row;
+            list-style-type: none;
+        }
+        .nav_items {
+            display: inline-block;
+            margin: 20px 20px 0px 20px;
+            padding-left: 70px;
+            background-color: rebeccapurple;
+            border-radius: 25px;
+            text-decoration: none;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            background-image: url(../images/RegularButton.png);
+        }
+        .nav_items:hover {
+            background-color: goldenrod;
+        }
+        .nav_items:active {
+            background-color: brown;
+        }
+        .copyright {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 10px;
+            position: fixed;
+            z-index: 100;
+        }
+        .item_one {
+            z-index: 1;
+            padding: 0px 0px 0px 0px;
+            margin: 0px 0px 100px 600px;
+            font-size: 40px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            position: relative;
+            height: 50px;
+            background-color: aliceblue;
+            width: 300px;
+            background-repeat: no-repeat;
+        }
+        .item_two {
+            z-index: 1;
+        }
+        .item_three {
+            z-index: 1;
+        }
+        .item_four {
+            z-index: 1;
+        }
+        /* Responsive Design 
+        @media screen and (max-width: 480px) {
+                .item_one {
+                width: 100px;
+                }
+        }
+        */
+    </style>
+    <nav>
+        <h1 class="copyright">
+            <strong>|©|UO Studios|©|</strong>
+        </h1>
+        <h2 class="current_page">
+            <strong>||Current Page||: UO Studios |Support Us|</strong>
+        </h2>
+        <ul class="nav_ul">
+            <button class="nav_items" id="nav_home_button">Home</button>
+            <button class="nav_items" id="nav_contact_button">Contact</button>
+            <button class="nav_items" id="nav_support_us_button">Support Us</button>
+            <button class="nav_items" id="nav_projects_button">Projects</button>
+            <button class="nav_items" id="nav_updates_button">Updates</button>
+            <button class="nav_items" id="nav_supporters_button">Supporters</button>
+            <button class="nav_items" id="nav_links_button">Links</button>
+        </ul>
+    </nav>
+    <br />
+    <br />
+    <header class="item_one">UO Studios</header>
+    <section class="item_two">section</section>
+    <section class="item_three">section</section>
+    <footer class="item_four">footer</footer>
+        <script>
+            alert("Webpage in Development!");
+            var nav_home_button = document.getElementById("nav_home_button");
+            var nav_contact_button = document.getElementById("nav_contact_button");
+            var nav_support_us_button = document.getElementById("nav_support_us_button");
+            var nav_projects_button = document.getElementById("nav_projects_button");
+            var nav_updates_button = document.getElementById("nav_updates_button");
+            var nav_supporters_button = document.getElementById("nav_supporters_button");
+            var nav_links_button = document.getElementById("nav_links_button");
+            nav_home_button.addEventListener("click", link_page);
+            nav_contact_button.addEventListener("click", link_page);
+            nav_support_us_button.addEventListener("click", link_page);
+            nav_projects_button.addEventListener("click", link_page);
+            nav_updates_button.addEventListener("click", link_page);
+            nav_supporters_button.addEventListener("click", link_page);
+            nav_links_button.addEventListener("click", link_page);
+                function link_page() {;
+                    if (this.attributes.Id.value === "nav_home_button") {;
+                        window.location = "../../index.html"
+                    } else if (this.attributes.Id.value === "nav_contact_button") {;
+                        window.location = "contact.html"
+                    } else if (this.attributes.Id.value === "nav_support_us_button") {;
+                        window.location = "support_us.html"
+                    } else if (this.attributes.Id.value === "nav_projects_button") {;
+                        window.location = "projects.html"
+                    } else if (this.attributes.Id.value === "nav_updates_button") {;
+                        window.location = "updates.html"
+                    } else if (this.attributes.Id.value === "nav_supporters_button") {;
+                        window.location = "supporters.html"
+                    } else if (this.attributes.Id.value === "nav_links_button") {;
+                        window.location = "links.html"
+                    };
+                };
+        </script>
+</body>
+
+
+</html>
