@@ -11,8 +11,6 @@ body {
     background-attachment: fixed;
     background-size: cover;
     position: fixed;
-    margin: 0px;
-    padding: 0px;
 }
 .current_page {
     background-color: darkblue;
@@ -35,7 +33,7 @@ body {
 .nav_items {
     display: inline-block;
     background-color: rebeccapurple;
-    border-radius: 25px;
+    border-radius: 50%;
     text-decoration: none;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     background-image: url(../images/RegularButton.png);
@@ -54,15 +52,18 @@ body {
 }
 .item_one {
     z-index: 1;
-    margin: 0px 25% 0px 25%;
     padding: 50px 300px 50px 300px;
-    text-indent: 30px;
+    text-indent: 50px;
     background-color: aliceblue;
     font-size: 40px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     height: 50px;
     width: 300px;
     background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 50%;
+    background-position: padding padding padding padding;
+    background-image: url(../images/WebsiteTitle_One.png);
 }
 .item_two {
     z-index: 1;
